@@ -1,3 +1,5 @@
+# Author: AwSnap
+
 import plotly.graph_objects as pg_o  # imports
 import pandas
 import requests  # imports

@@ -1,4 +1,5 @@
-# Imports
+# Author: Anti-Matter
+
 import requests
 import pandas as pd
 import plotly.express as px
