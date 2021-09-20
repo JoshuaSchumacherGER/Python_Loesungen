@@ -14,7 +14,7 @@ for i in range(anzahlReihen):
     belegung[i] = [False] * anzahlPlaetze
 
 for i in range(anzahlReihenLoge):
-    belegungLoge[i] = [False] * anzahlPlaetze;
+    belegungLoge[i] = [False] * anzahlPlaetze
 
 # -----------------------------
 # Zufällige Belegung der Plätze
@@ -23,12 +23,12 @@ random.seed()
 
 for reihe in range(anzahlReihen):
     for platz in range(anzahlPlaetze):
-        if random.randint(0,1) == 1:
+        if random.randint(0, 1) == 1:
             belegung[reihe][platz] = True
 
 for reihe in range(anzahlReihenLoge):
     for platz in range(anzahlPlaetze):
-        if random.randint(0,1) == 1:
+        if random.randint(0, 1) == 1:
             belegungLoge[reihe][platz] = True
 
 # --------------------
@@ -42,21 +42,21 @@ print("-------------------------------")
 
 for reihe in range(anzahlReihen):
  #  print(" {0}.Reihe | ".format(reihe + 1), end = "")
-    print(reihe+1, "Reihe  | ",end = "") 
+    print(reihe+1, "Reihe  | ", end="")
     for platz in range(anzahlPlaetze):
         if belegung[reihe][platz] == True:
-            print("x", end = " ")
+            print("x", end=" ")
         else:
-            print("-", end = " ")
+            print("-", end=" ")
     print()
 
 print("------------------------------")
 
 for reihe in range(anzahlReihenLoge):
-    print(reihe+1, "Reihe  | ",end = "") 
+    print(reihe+1, "Reihe  | ", end="")
     for platz in range(anzahlPlaetze):
         if belegungLoge[reihe][platz] == True:
-            print("x", end = " ")
+            print("x", end=" ")
         else:
-            print("-", end = " ")
+            print("-", end=" ")
     print()
