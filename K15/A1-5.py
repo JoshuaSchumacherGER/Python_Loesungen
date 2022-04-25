@@ -40,9 +40,9 @@ print(haus3.farbe)
 # ===== Aufgabe 5 =====
 # Erstelle eine neue Hausliste mit 3 Hausobjekten. Danach soll überprüft werden, ob ein Haus über 200.000€ kostet. Falls ja, wird das Haus aus der Liste entfernt. Gebe anschließend die Liste auf der Konsole aus.
 häuser_alt = [haus1, haus2, haus3]
-häuser_über_200000 = [x for x in häuser_alt if x.preis > 200_000]
+häuser_unter_200000 = [x for x in häuser_alt if x.preis < 200_000]
 print(häuser_alt)
-print(häuser_über_200000)
+print(häuser_unter_200000)
 
 
 
