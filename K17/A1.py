@@ -46,6 +46,3 @@ yzfr.beschleunigen().bremsen().tanken_bis_prozent(90).mach_wheelie()
 print("===== AUTO =====")
 e30 = Auto('BMW E30', 20, 40, True)
 e30.beschleunigen().beschleunigen().mach_drift().bremsen().bremsen().tanken_bis_prozent(66)
-
-
-  

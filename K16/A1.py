@@ -17,4 +17,11 @@ class Haus():
       print('Du musst einen Wert über 0 eingeben!')
 
 mein_haus = Haus('Peterstraße', 13, 190, 400_000)
-mein_haus.preis = 1
+
+# Testing Getter & Setter
+mein_haus.preis = -900_000
+print(mein_haus.preis)
+mein_haus.preis = 0
+print(mein_haus.preis)
+mein_haus.preis = 300_123
+print(mein_haus.preis)
