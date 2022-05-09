@@ -1,21 +1,20 @@
-auto_Kosten = input("Wie viel kostet das Auto? ")
-auto_Kosten = int(auto_Kosten)
+car_price = input("Was kostet das Auto?: ")
+car_price = int(car_price)
 
-klimaanlage = input("Hat das Auto eine Klimaanlage? Ja oder Nein? ")
+klimaanlage = input("Hat das Auto eine Klimaanlage(Ja oder nein): ")
 if klimaanlage == "Ja":
     klimaanlage = True
 else:
     klimaanlage = False
 
-
-if auto_Kosten <= 20000 and klimaanlage == True:
+if car_price <= 20000 and klimaanlage == True:
     print("Auto kaufen!")
+    
+elif car_price <= 20000 and klimaanlage == False:
+    print("Klimaanlage nicht vorhanden, nicht kaufen!")
+    
+elif car_price > 20000 and klimaanlage == True:
+    print("Pries zu hoch!")
 
-elif auto_Kosten <= 20000 and klimaanlage == False:
-    print("Auto nicht kaufen, weil Klimaanlage fehlt!")
-    
-elif auto_Kosten > 20000 and klimaanlage == True:
-    print("Auto ist zu Teuer! Aber es hat eine Klimaanlage!")
-    
 else:
-    print("Auto ist zu Teuer! Und es hat keine Klimaanlage!")
+    print("Preis zu hoch und keine Klimaanlage!")

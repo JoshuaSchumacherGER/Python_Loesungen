@@ -1,8 +1,10 @@
-countdown = input("Wie lange soll der Countdown sein? ")
-countdown = int(countdown)
+n = 10
 
-a = countdown
-
-for x in range(0, countdown):
-    print (a)
-    a -= 1
+def countdown(n):
+    while(n >= 0):
+        if n == None:
+            break
+        else:
+            print(n)
+            n -= 1
+countdown(n)

@@ -1,17 +1,16 @@
-preis = input("Wie viel kostet das Handy? ")
-preis = int(preis)
+phone_price = input("Handypreis: ")
+phone_price = int(phone_price)
 
-kameras = input("Wie viele Rückkameras hat das Handy? ")
-kameras = int(kameras)
+camera = input("Wieviele Kameras hat das Handy: ")
+camera = int(camera)
 
-lifetime = input("Wie viele Tage hält die Batterie? ")
+
+lifetime = input("Wie lange hält der Akku in Tagen?")
 lifetime = int(lifetime)
 
-Marke = input("Von welcher Marke ist das Handy? ")
+marke = input("Von welcher Marke ist das Handy?")
 
-
-if preis < 1000 and kameras >= 3 and lifetime >= 2 and ((Marke == "Apple") or (Marke == "Samsung")):
-    print("Ich werde das Handy kaufen!")
-
+if phone_price < 1000 and camera >= 3 and lifetime >= 2 and marke ==("Apple" or "Samsung"):
+    print("Handy kaufen!")
 else:
-    print("Ne das kacke, kauf ich nicht!")
+    print("Handy nicht kaufen!")

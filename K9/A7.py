@@ -1,20 +1,20 @@
 import random
 
-random_num = random.randrange(0, 100)
+def crackingNumber():
+    n = 0
+    x = random.randint(0,100)
+    while(n != 7):
+        n += 1
+        answer = int(input("Gebe eine zahl zwischen 0 und 100 ein: "))
+        if answer > 100 or answer < 0:
+            print("Deine Eingabe muss zwischen 0 und 100 liegen!")
+        elif answer > x:
+          print("Die gesuchte Zahl ist kleiner")
+        elif answer < x:
+            print("Die gesuchte Zahl ist größer")
+        elif answer == x:
+            print("Gewonnen!")
+            break
+    print("Verloren! Die gesuchte Zahl war" , x) 
 
-tries_Left = 5
-
-while(tries_Left > 0):
-    print("Rate die Zahl. Du hast noch: ", tries_Left, "Versuche.")
-    zahl = input("")
-    zahl = int(zahl)
-    
-    tries_Left -= 1
-    
-    if zahl == random_num:
-        print("Gewonnen!")
-        break
-    elif zahl > random_num:
-        print("Gesuchte Zahl ist groesser")
-    else:
-        print("Gesuchte Zahl ist kleiner")
+crackingNumber()  

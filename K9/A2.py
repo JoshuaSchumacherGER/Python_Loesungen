@@ -1,17 +1,18 @@
-zahl = input("Wie hoch soll die Fibonacci-Folge berechnet werden?")
-zahl = int(zahl)
+nwdh = int(input("Wieviele Wiederholungen? "))
 
-def fib(b):
-    erg = 0
-    zahl1 = 0
-    zahl2 = 1
-    for x in range(0, b):
-        if b == 0:
-            erg = 0
-            break
-        zahl1 = zahl2
-        zahl2 = erg       
-        erg = zahl1 + zahl2
-    return erg
-               
-print(fib(zahl))
+n1, n2 = 0, 1
+count = 0
+
+if nwdh <= 0:
+   print("Einen positiven Integer eingeben")
+elif nwdh == 1:
+   print("Fibonacci Reihenfolge bis",nwdh,":")
+   print(n1)
+else:
+   print("Fibonacci Reihenfolge:")
+   while count < nwdh:
+       print(n1)
+       nth = n1 + n2
+       n1 = n2
+       n2 = nth
+       count += 1

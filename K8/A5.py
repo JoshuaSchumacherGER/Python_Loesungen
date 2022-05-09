@@ -1,16 +1,17 @@
-regen = input("Regnet es? Ja oder Nein? ")
-if regen == "Ja":
-    regen = True
+weather = input("Wie ist das Wetter?")
+if weather == "Regen":
+    weather = True
 
-geld = input("Wie viel Geld hast du? ")
-geld = int(geld)
-    
-freundin_Zahlt = input("Als ob die alte zahlt? Ja oder Nein? ")
-if freundin_Zahlt == "Ja":
-    freundin_Zahlt = True
-    
-if (geld >= 20 or freundin_Zahlt == True) and regen == False:
-    print("Wir gehen ins Kino!")
+money = input("Wieviel Geld hast du noch übrig?")
+money = int(money)
 
+gf_pays = input("Zahlt deine Freundin?")
+if gf_pays == "Ja":
+    gf_pays = True
 else:
-    print("Kein Kino!")
+    gf_pays = False #Andere Freundin suchen!!!
+
+if weather == True and money >= 20 or gf_pays == True:
+    print("Auf ins Kino!")
+else:
+    print("Zuhause bleiben...")

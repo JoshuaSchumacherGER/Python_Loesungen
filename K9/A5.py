@@ -1,5 +1,5 @@
-zahl = input("Gib mir eine Zahl. ")
-zahl = int(zahl)
+n = input("Wähle eine Zahl aus: ")
+n = int(n)
 
-for x in range(0, zahl):
-    print((x+1) * "*")
+for x in range(0, n):
+    print("*" * (x + 1))
