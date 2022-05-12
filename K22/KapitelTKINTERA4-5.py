@@ -1,4 +1,5 @@
-import csv
+#Author Daniel Heinz
+
 import tkinter
 from tkinter import NSEW, StringVar, ttk
 from tkinter.messagebox import showinfo
