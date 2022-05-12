@@ -1,3 +1,5 @@
+#Author Daniel Heinz
+
 import tkinter
 from tkinter import TclError, Toplevel, ttk, DoubleVar
 from random import randrange
