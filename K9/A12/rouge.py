@@ -53,7 +53,7 @@ class Rouge:
                     self.healthpotion()
                     return 0
                 else:
-                    print("Healing allready used")
+                    print("Healing already used")
             print("Wrong Input")
 
     def printData(self):

@@ -55,7 +55,7 @@ class Mage:
                     self.smallhealing()
                     return 0
                 else:
-                    print("Healing allready used")
+                    print("Healing already used")
             print("Wrong Input")
 
     def printData(self):
