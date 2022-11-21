@@ -16,5 +16,5 @@ def iterfib(n):
     return result
 
 
-for n in range(0, 10):
-    print("n: ", n, " ", iterfib(n))
+n = int(input("Für welches n willst du den Wert der Fibonacci Folge wissen?: "))
+print(iterfib(n))
