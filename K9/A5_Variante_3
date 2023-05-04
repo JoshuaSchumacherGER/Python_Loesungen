@@ -1,0 +1,6 @@
+def star():
+    x = int(input()) + 1
+    for n in range(1, x):
+        print(n * "*")
+
+star()
