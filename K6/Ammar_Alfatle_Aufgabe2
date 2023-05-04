@@ -1,0 +1,13 @@
+#Aufgabe 2 Teil 1 von Ammar Alfatle
+
+def Spritberechner(Kilometer,Spritverbrauch,Kosten):
+    return (Kilometer/100*Spritverbrauch*Kosten)
+
+Kilometer = int (input("Bitte geben Sie die gefahrene Kilometer ein."))
+Spritverbrauch = int (input("Bitte geben Sie den durchnitlichen Spritverbrauch ein."))
+Kosten = int (input("Bitte geben Sie die Kosten pro Liter ein."))
+
+print ("Die Spritkosten sind" , Spritberechner(Kilometer,Spritverbrauch,Kosten) , "€.")
+
+#Aufgabe 2 Teil 2 von Ammar Alfatle 
+# es gibt andere Kosten, die die berechnung beeinflüssen kann sowie Versicherung, KFZ-Steuer und Wertverlust
