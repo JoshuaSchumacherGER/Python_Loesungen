@@ -1,0 +1,27 @@
+#A1
+
+class Haus:
+    def __init__(self, Straße, Hausnummer, Farbe, Preis, Stockzahl, Quadratmeter) -> None:
+        self.Straße = Straße
+        self.Hausnummer = Hausnummer
+        self.Farbe = Farbe
+        self.Preis = Preis 
+        self.Stockzahl = Stockzahl
+        self.Quadratmeter = Quadratmeter
+        
+Player1 = Haus("Berliner str.", 18, "Rot", 325000, 3, 300)
+
+#A2
+
+class Haus:
+    def __init__(self, Straße, Hausnummer, Farbe, Preis, Stockzahl, Quadratmeter) -> None:
+        self.Straße = Straße
+        self.Hausnummer = Hausnummer
+        self.Farbe = Farbe
+        self.Preis = Preis 
+        self.Stockzahl = Stockzahl
+        self.Quadratmeter = Quadratmeter
+        
+Player1 = Haus("Mainzer str.", 125, "Blau", 125000, 2, 200)
+
+print(Player1.__dict__)
