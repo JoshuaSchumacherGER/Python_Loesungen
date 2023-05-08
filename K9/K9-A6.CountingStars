@@ -1,0 +1,16 @@
+# Counting Stars
+# Aufgabe K9 \ A6
+# Carlos Eduardo Atencio Quintero Klasse: BS-FI 22C
+
+
+Sterne = int(input("Bitte schreiben Sie eine Nummer: "))
+
+for i in range(1, Sterne+1):
+    for j in range(i):
+        print("* ", end="")
+    print()
+
+for i in range(Sterne-1, 0, -1):
+    for j in range(i):
+        print("* ", end="")
+    print()
