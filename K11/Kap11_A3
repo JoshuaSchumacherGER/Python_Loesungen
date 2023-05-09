@@ -1,0 +1,40 @@
+test ={
+    'Jan':'50',	
+    'Mark':'81',
+    'Julia':'0151438924',
+    'Mark':'016932834'
+}#"einfaches" Dictionary, welches als Parameter übergeben wird
+
+tel ={
+'arbeit':{'Jan':'50',	'Mark':'81'},	
+'private':{'Julia':'0151438924','Mark':'016932834'}
+} #"Doppeltes" Dictionary, welches als Parameter übergeben wird
+
+def search(d,value): #Suche in einem "einfachen" Dictionary
+    for item in d: #Es wird durch das Dictionary durchiteriert
+        if(item == value): #Jedes "item" wird auf den übergebenen Wert von "value" verglichen
+            return True #Wenn ja, endet die Funktion hier und gibt ein True zurück
+        for item in d.values(): #Nun werden durch die "Werte" der einzelnen Einträge mit dem Value Wert verglichen.
+            if(item == value): #Es wird verglichen, ob der iterierte Wert, dem Parameter "value" entspricht
+                return True #Wenn ja, endet die Funktion hier und gibt ein True zurück
+    return False #Wenn der Loop endet und nichts gefunden wurde, gibt die Methode ein false zurück
+
+def supersearch(d,value): #Suche in einem "doppelten" Dictionary
+    for item in d.values(): #Zuerst wird durch das "erste" Dictionary als Liste durchiteriert, item wird hier zu einem "einfachen" Dictionary
+        for items in item: #Dann wird durch das "zweite" Dictionary durchiteriert, da item ein "einfaches" Dictionary ist, können wir hier ebenfalls durchiterieren
+            if(items == value): #Es wird verglichen, ob der iterierte Wert, dem Parameter "value" entspricht
+                return True #Wenn ja, endet die Funktion hier und gibt ein True zurück
+            for items in item.values(): #Nun werden durch die "Werte" der einzelnen Einträge mit dem Value Wert verglichen.
+                if(items == value): #Es wird verglichen, ob der iterierte Wert, dem Parameter "value" entspricht
+                    return True #Wenn ja, endet die Funktion hier und gibt ein True zurück
+    return False #Wenn der Loop endet und nichts gefunden wurde, gibt die Methode ein false zurück
+
+
+q = search(test, 'Mark')
+qp = search(test, '016932834')
+p = supersearch(tel,'Mark')
+pq = supersearch(tel,'016932834')
+print(q)
+print(qp)
+print(p)
+print(pq)
