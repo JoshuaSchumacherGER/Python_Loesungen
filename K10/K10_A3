@@ -1,0 +1,15 @@
+liste = [5,8,1,4,9,6,3,2]
+neueliste = []
+def selectionsort(oldlist, newlist):
+    smallest = oldlist[0] #Initialer Wert wird auf das erste Element der Liste gestellt
+    for x in oldlist:
+        if(x<smallest): #Schritt 1: kleinstes Element aus der Liste suchen
+            smallest = x
+    oldlist.remove(smallest) 
+    newlist.append(smallest) #Schritt2: kleinstes Element aus der Liste entfernen und der neuen Liste hinzufügen
+    if(len(oldlist)>0):
+        selectionsort(oldlist, newlist) #Schritt 3: Wiederhole Schritt 1&2 solange, bis die Ursprungsliste leer ist
+    return newlist
+
+neueliste = selectionsort(liste, neueliste)
+print(neueliste)
