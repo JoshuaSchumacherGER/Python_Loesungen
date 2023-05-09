@@ -1,0 +1,7 @@
+def check_passwords(passwords):
+    for x in passwords:
+        if "ab" in x or "ba" in x:
+            print(x)
+
+passwords = ["ababa", "baab", "sdiopc", "ajkwei", "bab"]
+check_passwords(passwords)
