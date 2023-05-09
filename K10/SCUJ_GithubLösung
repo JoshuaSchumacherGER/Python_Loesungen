@@ -1,0 +1,6 @@
+def all_combinations(playernumber):
+    for i in range(1, playernumber):
+        for j in range(i+1, playernumber+1):
+            print(f"Player {i} vs Player {j}")
+all_combinations(10) 
+
