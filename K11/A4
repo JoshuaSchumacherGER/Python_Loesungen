@@ -1,0 +1,25 @@
+#Kapitel 11 Aufgabe 4
+
+# Ein leeres Dictionary erstellen
+laender = {}
+
+# Endlosschleife bis der Benutzer "Beenden" eingibt
+while True:
+    # Eingabe des Benutzers abfragen
+    eingabe = input("Bitte geben Sie ein Land und seine Hauptstadt ein (Format: Land,Hauptstadt) oder 'Beenden', um das Programm zu beenden: ")
+    
+    # Überprüfen, ob der Benutzer das Programm beenden möchte
+    if eingabe.lower() == "beenden":
+        break
+    
+    # Die Eingabe in Land und Hauptstadt aufteilen
+    land, hauptstadt = eingabe.split(",")
+    
+    # Das Land und seine Hauptstadt dem Dictionary hinzufügen
+    laender[land.strip()] = hauptstadt.strip()
+
+# Ausgabe des Dictionaries im gewünschten Format
+print("Land | Hauptstadt")
+print("-" * 20)
+for i, (land, hauptstadt) in enumerate(laender.items(), start=1):
+    print(f"{i}. {land} | {hauptstadt}")
