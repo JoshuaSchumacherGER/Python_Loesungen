@@ -1,0 +1,12 @@
+AutoPreis = 21000
+KlimaanlageVorhanden = True
+
+if KlimaanlageVorhanden == False and AutoPreis >20000: 
+    print("Das Auto wird nicht gekauft weil es keine Klimaanlage hat und weil der Preis zu hoch ist") 
+elif AutoPreis <=20000 and KlimaanlageVorhanden == True:
+    print("Auto  wird gekauft")
+elif AutoPreis >20000:
+    print("Das Auto wird nicht gekauft weil der Preis zu hoch ist")
+elif KlimaanlageVorhanden == False:
+    print("Das Auto wird nicht gekauft weil keine Klimaanlage vorhanden ist")
+
