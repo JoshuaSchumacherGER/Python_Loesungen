@@ -1,0 +1,13 @@
+def ende():
+    x=1
+    versuche=0
+    while x !=0: 
+        x=int(input("Geben sie eine Zahl ein: "))
+        versuche+=1 
+        print("Das ist nicht die gesuchte Zahl, versuche es erneut")
+        if x== 0:
+
+             print("Das Programm wird beendet")
+             print ("Du hattest",versuche,"versuche")
+     
+ende()
