@@ -1,0 +1,18 @@
+import random
+
+Versuche = 5
+Zahl= random.randint(0,100)
+
+while Versuche >0:
+    Eingabe= int(input("Gib eine Schätzung ab: "))
+    if Eingabe == Zahl:
+        print("Richtig")
+        break
+    elif Eingabe > Zahl:
+        print("kleiner")
+    elif Eingabe < Zahl:
+        print("größer")
+    Versuche -=1
+
+if Versuche ==0:
+    print("Du hast verloren")
