@@ -1,0 +1,11 @@
+def cancel():
+    while True:
+        a= input("Schreiben sie mir etwas: ")
+        print(str(a))
+        if a == "Beenden" or a== "beenden":
+            break
+
+    print("Das Programm wurde beendet")
+
+
+cancel()
