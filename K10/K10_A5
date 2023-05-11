@@ -1,0 +1,11 @@
+liste = [5,8,1,4,9,6,3,2]
+def bubblesort(list):
+    for x in range(len(list)-1):#Die "äußere" Schleife um die ganze Liste durchzugehen, wir gehen die Liste (Länge der Liste-1) mal durch
+        for y in range(len(list)-1):#Die "innere" Schleife um die Werte durchzugehen
+            if(list[y] > list[y+1]):#Kontrolle, ob der "Nachfolger" kleiner ist, wenn ja:
+                temp = list[y] #größerer Wert wird temporär zwischengespeichert
+                list[y] = list[y+1] #Kleinerer Wert wird vorgezogen
+                list[y+1] = temp #Größerer Wert wird zum "Nachfolger"
+    return list
+liste = bubblesort(liste)
+print(liste)
