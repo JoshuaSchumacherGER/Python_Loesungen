@@ -10,7 +10,7 @@ class Player:
     def chose(self):
         while (True):
             inputUser = (
-                input("Which Chraracter you chose? (Warrior,Mage,Rouge): ")).lower()
+                input("Which Character do you choose? (Warrior, Mage, Rouge): ")).lower()
             if (inputUser == "warrior"):
                 self.player = warrior.Warrior()
                 break

@@ -11,7 +11,7 @@ class Rouge:
 
     def sneakattack(self):
         attack = random.randint(1, 3)
-        print("Next Attack", attack, "more damage")
+        print("Next attack", attack, "more damage")
         self.nextattack = self.nextattack+attack
 
     def daggerattack(self):
@@ -24,7 +24,7 @@ class Rouge:
         dust = random.randint(1, 3)
         if (dust == 2):
             self.noDamage = True
-            print("Next Round no Damage")
+            print("Next round no damage")
         else:
             print("Dust no hit")
 
@@ -53,21 +53,21 @@ class Rouge:
                     self.healthpotion()
                     return 0
                 else:
-                    print("Healing allready used")
-            print("Wrong Input")
+                    print("Healing already used")
+            print("Wrong input")
 
     def printData(self):
         print("Live: ", self.live)
         if (self.heal):
-            print("Healpotion already used")
+            print("Health Potion already used")
         else:
-            print("Healpotion is ready")
+            print("Health Potion is ready")
         if (self.noDamage):
-            print("Next Attack. No Damage")
+            print("Next attack. No damage")
 
     def getDamage(self, damage):
         if (self.noDamage):
             self.noDamage = False
-            print("No Damage because of Dust")
+            print("No damage because of dust")
         else:
             self.live -= damage

@@ -3,10 +3,10 @@ import player
 
 def finish():
     if (playerOne.player.live <= 0):
-        print("PlayerTwo Win!!!")
+        print("PlayerTwo Win !!!")
         return False
     if (playerTwo.player.live <= 0):
-        print("PlayerOne Win!!!")
+        print("PlayerOne Win !!!")
         return False
     return True
 
@@ -26,18 +26,18 @@ if (playerOne.player.initiative > playerTwo.player.initiative):
 
 while (finish()):
     print()
-    print("PlayerOne:")
+    print("Player One:")
     playerOne.player.printData()
     print()
-    print("PlayerTwo:")
+    print("Player Two:")
     playerTwo.player.printData()
     print()
 
     if (play):
-        print("PlayerOne Attack:")
+        print("Player One Attack:")
         playerTwo.player.getDamage(playerOne.player.attack())
         play = False
     else:
-        print("PlayerTwo Attack:")
+        print("Player Two Attack:")
         playerOne.player.getDamage(playerTwo.player.attack())
         play = True

@@ -15,7 +15,7 @@ class Warrior:
 
     def schieldblock(self):
         schield = random.randint(1, 4)
-        print("Next Attack decrease by", schield)
+        print("Next attack decrease by", schield)
         self.schield = self.schield+schield
 
     def healthpotion(self):
@@ -26,7 +26,7 @@ class Warrior:
     def attack(self):
         while (True):
             choise = input(
-                "Which Attack? (1=SwordStroke, 2=SchieldBlock, 3=Healthpotion): ")
+                "Which attack? (1=SwordStroke, 2=ShieldBlock, 3=HealthPotion): ")
             if (choise == "1"):
                 return self.swordstroke()
             if (choise == "2"):
@@ -38,8 +38,8 @@ class Warrior:
                     self.healthpotion()
                     return 0
                 else:
-                    print("Healing allready used")
-            print("Wrong Input")
+                    print("Healing already used")
+            print("Wrong input")
 
     def getDamage(self, damage):
         if (self.schield != 0):
@@ -53,10 +53,10 @@ class Warrior:
     def printData(self):
         print("Live: ", self.live)
         if (self.heal):
-            print("Healpotion already used")
+            print("Health Potion already used")
         else:
-            print("Healpotion is ready")
+            print("Health Potion is ready")
         if (self.schield != 0):
-            print("Schield: ", self.schield)
+            print("Shield: ", self.schield)
         else:
-            print("No Schield")
+            print("No Shield")
