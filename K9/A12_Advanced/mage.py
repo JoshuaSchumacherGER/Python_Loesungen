@@ -23,7 +23,7 @@ class Mage:
         rand = random.randint(1, 2)
         if (rand == 1):
             self.noDamage = 2
-            print("No Damage for two rounds")
+            print("No damage for two rounds")
         else:
             print("Fail")
 
@@ -55,23 +55,23 @@ class Mage:
                     self.smallhealing()
                     return 0
                 else:
-                    print("Healing allready used")
+                    print("Healing already used")
             print("Wrong Input")
 
     def printData(self):
         print("Live: ", self.live)
         if (self.heal):
-            print("Healpotion already used")
+            print("Health Potion already used")
         else:
-            print("Healpotion is ready")
+            print("Health Potion is ready")
         if (self.charged):
             print("Fireball is ready")
         else:
             print("Fireball is not ready")
         if (self.noDamage != 0):
-            print("Schield for", self.noDamage, "Round/s")
+            print("Shield for", self.noDamage, "Round/s")
         else:
-            print("No Schield")
+            print("No shield")
 
     def getDamage(self, damage):
         if (self.noDamage == 0):
